@@ -24,6 +24,7 @@
             }
             .mdn{
                 display: block;
+                height: 800px !important;
             }
         }
     </style>
@@ -34,7 +35,7 @@
 
   <div class="row">
 
-      <div class="col-md-3 col-xs-12 mdsdn"style="background-image:url('{{asset($flips->image)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; padding: 0px !important;">
+      <div class="col-md-3 col-xs-12 mdsdn" style="background-image:url('{{asset($flips->image)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; padding: 0px !important;">
           <div class="row" style="margin-top: 220px; padding: 10px; background: rgba(78,91,78,0.3) ">
               @if(Session::has('message'))
                   <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -48,7 +49,7 @@
                   <form method="post" action="{{route('form.front.submit')}}">
                       @csrf
                       <div class="form-group">
-                          <input type="text" required class="form-control" id="email" name="fname" placeholder="Prenom">
+                          <input type="text" required class="form-control" id="email" name="fname" placeholder="Prénom">
                       </div>
                       <div class="form-group">
                           <input type="text" required class="form-control" id="pwd" name="lname" placeholder="Nom">
@@ -57,10 +58,10 @@
                           <input type="text" required class="form-control" id="pwd" name="email" placeholder="Email">
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" id="pwd" name="phone" placeholder="Telephone (facultatif)">
+                          <input type="text" class="form-control" id="pwd" name="phone" placeholder="Téléphone (facultatif)">
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" id="pwd" name="company" placeholder="Nom de la societe (facultatif)">
+                          <input type="text" class="form-control" id="pwd" name="company" placeholder="Nom de la société (facultatif)">
                       </div>
                       <input type="hidden" name="catalog" value="{{$flips->name}}">
 
@@ -77,12 +78,12 @@
         <div id="flipbookContainer"></div>
     </div>
       <div class="col-md-3 col-xs-12 mdn"style="background-image:url('{{asset($flips->image)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; padding: 0px !important;">
-          <div class="row" style="margin-top: 100px; padding: 10px; background: rgba(78,91,78,0.3) ">
-              <div class="col-md-12">
-                  <form method="post" action="{{route('form.front.submit')}}">
+          <div class="row" style="margin-top: 220px; padding: 10px; background: rgba(78,91,78,0.3) ">
+              <div class="col-md-12" >
+                  <form  method="post" action="{{route('form.front.submit')}}">
                       @csrf
                       <div class="form-group">
-                          <input type="text" required class="form-control" id="email" name="fname" placeholder="Prenom">
+                          <input type="text" required class="form-control" id="email" name="fname" placeholder="Prénom">
                       </div>
                       <div class="form-group">
                           <input type="text" required class="form-control" id="pwd" name="lname" placeholder="Nom">
@@ -91,10 +92,10 @@
                           <input type="text" required class="form-control" id="pwd" name="email" placeholder="Email">
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" id="pwd" name="phone" placeholder="Telephone (facultatif)">
+                          <input type="text" class="form-control" id="pwd" name="phone" placeholder="Téléphone (facultatif)">
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" id="pwd" name="company" placeholder="Nom de la societe (facultatif)">
+                          <input type="text" class="form-control" id="pwd" name="company" placeholder="Nom de la société (facultatif)">
                       </div>
                       <input type="hidden" name="catalog" value="{{$flips->name}}">
                       <div class="checkbox">

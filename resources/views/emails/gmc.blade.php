@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-<p>Un nouvel utilisateur soumet le formulaire sur le site Web. Voici les détails de l'utilisateur.</p> <br>
-* Prenom : {{ $data['fname'] }} <br>
+<p>Un nouveau client a repondu au formulaire du catalogue. Voici les détails du client</p> <br>
+* Prénom : {{ $data['fname'] }} <br>
 * Nom : {{ $data['lname'] }} <br>
 * Email : {{ $data['lname'] }} <br>
-* Telephone : {{ $data['phone'] }} <br>
+* Téléphone : {{ $data['phone'] }} <br>
 * Société : {{ $data['company'] }} <br>
 </body>
 </html>
