@@ -19,6 +19,7 @@ class Gmc extends Mailable
     public function __construct($data)
     {
         $this->data = $data;
+        $this->catalog = $data['catalog'];
     }
 
     /**
@@ -28,7 +29,8 @@ class Gmc extends Mailable
      */
     public function build()
     {
-        return $this->from('inf0@spenceragency.com', 'GMC')->view('emails.gmc') ->with([
+        return $this->from('inf0@spenceragency.com', 'GMC')->subject($this->catalog)->view('emails.gmc')
+            ->with([
             'data' => $this->data,
         ]);
     }
