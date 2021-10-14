@@ -35,7 +35,7 @@
   <div class="row">
 
       <div class="col-md-3 col-xs-12 mdsdn"style="background-image:url('{{asset($flips->image)}}'); background-repeat: no-repeat; background-size: 100% 100%; text-align: center; padding: 0px !important;">
-          <div class="row" style="margin-top: 200px; padding: 10px; background: rgba(78,91,78,0.3) ">
+          <div class="row" style="margin-top: 220px; padding: 10px; background: rgba(78,91,78,0.3) ">
               @if(Session::has('message'))
                   <div class="alert alert-success alert-dismissible fade show" role="alert">
                       <strong>Succès! </strong> {{ Session::get('message') }}
