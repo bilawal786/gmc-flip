@@ -124,7 +124,7 @@ class FlipController extends Controller
 
     public function form(Request $request){
         $data = $request->all();
-        Mail::to('bilawal.jabbar.786@gmail.com')->send(new Gmc($data));
+        Mail::to('eddygoyor@gmail.com')->send(new Gmc($data));
         Session::flash('message', 'Le formulaire est soumis avec succès');
         return redirect()->back();
     }
