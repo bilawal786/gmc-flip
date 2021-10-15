@@ -29,7 +29,7 @@ class Gmc extends Mailable
      */
     public function build()
     {
-        return $this->from('inf0@spenceragency.com', 'GMC')->subject($this->catalog)->view('emails.gmc')
+        return $this->from('info@ikaedigital.com', 'GMC')->subject($this->catalog)->view('emails.gmc')
             ->with([
             'data' => $this->data,
         ]);
