@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-<p>Un nouveau client a repondu au formulaire du catalogue. Voici les détails du client</p> <br>
+<p>Un nouveau client a répondu au formulaire du catalogue. Voici les détails du client</p> <br>
 * Prénom : {{ $data['fname'] }} <br>
 * Nom : {{ $data['lname'] }} <br>
 * Email : {{ $data['lname'] }} <br>
