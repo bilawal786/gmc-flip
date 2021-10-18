@@ -10,7 +10,7 @@
 <p>Un nouveau client a répondu au formulaire du catalogue. Voici les détails du client</p> <br>
 * Prénom : {{ $data['fname'] }} <br>
 * Nom : {{ $data['lname'] }} <br>
-* Email : {{ $data['lname'] }} <br>
+* Email : {{ $data['email'] }} <br>
 * Téléphone : {{ $data['phone'] }} <br>
 * Société : {{ $data['company'] }} <br>
 </body>
